@@ -1,2 +1,4 @@
 # Facial-asymmetry-biometric
-A code developed during my final year project. The code is developed to study whether machine-learning algorithms 
+A code developed during my final year project. The code is developed to study whether machine-learning algorithms can act as a biometric system and correctly identify individuals using their facial asymmetry
+
+The code works by reading csv files OpenFace has produced. OpenFace produces csv files containing landmark coordinates. This program processes the coordinates and converts it to measurements. The measurements include distances and angles from one half of the face to another. The measurements are then compared with the corresponding sides to form ratios. The ratios are then processed through various algorithms to see which has the highest training accuracy. Linear Discriminant Analysis algorithm is usually the highest scoring algorithm. Once the algorithm is trained, the model can be exported to perform predictions.
